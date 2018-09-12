@@ -2,14 +2,14 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Route,
-    Link
+    Link,
+    withRouter
 } from 'react-router-dom';
 
-import Home from "../screen/home";
+import Home from "../container/homeContainer";
 import AboutUs from "../screen/aboutUs";
 
-
-export default () => (
+export default  () => (
     <Router>
         <div>
             <Route exact path="/" component={Home}/>
@@ -17,3 +17,4 @@ export default () => (
         </div>
     </Router>
 );
+
