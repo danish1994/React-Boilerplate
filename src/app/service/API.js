@@ -9,7 +9,7 @@ export const GET = async (path) => {
 export const POST = async (path, data) => {
     let res = await fetch(config.BaseURL + path, {
         method: 'POST',
-        body: JSON.stringify(data)
+        body: JSON.stringify(data || {})
     });
     res = await res.json();
     return res;
