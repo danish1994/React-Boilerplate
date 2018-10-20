@@ -1,5 +1,7 @@
 import {Component} from "react";
 import React from "react";
+import { Link } from 'react-router-dom';
+
 
 class Home extends Component {
     render() {
@@ -8,6 +10,7 @@ class Home extends Component {
             <div className="App">
                 <header className="App-header">
                     <h1 className="App-title">Home</h1>
+                    <Link to="/about">About</Link>
                     <p>{count}</p>
                     <div>
                         <button onClick={increment.bind(this)}>Increment</button>

@@ -1,9 +1,7 @@
 import React from 'react';
 import {
     BrowserRouter as Router,
-    Route,
-    Link,
-    withRouter
+    Route
 } from 'react-router-dom';
 
 import Home from "../container/homeContainer";
@@ -13,7 +11,7 @@ export default  () => (
     <Router>
         <div>
             <Route exact path="/" component={Home}/>
-            <Route path="/aboutUs" component={AboutUs}/>
+            <Route path="/about" component={AboutUs}/>
         </div>
     </Router>
 );
